@@ -25,7 +25,7 @@ st.markdown("""
     /* Glowing Title */
     .neon-text {
         font-family: 'Courier New', sans-serif;
-        font-size: 60px;
+        font-size: 100px;
         font-weight: bold;
         text-align: center;
         color: #fff;
@@ -177,3 +177,4 @@ else:
             <p>Explore thousands of movies using our AI-driven content filtering system.</p>
         </div>
     """, unsafe_allow_html=True)
+
