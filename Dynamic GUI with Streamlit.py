@@ -5,7 +5,7 @@ import requests
 
 # Function to fetch posters from TMDB API (Optional but recommended)
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=YOUR_TMDB_API_KEY&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key=2f8d51659817f1f010ec4cdce7af1633&language=en-US"
     data = requests.get(url).json()
     poster_path = data['poster_path']
     full_path = "https://image.tmdb.org/t/p/w500/" + poster_path
@@ -57,4 +57,5 @@ if st.button('Show Recommendation'):
         st.image(posters[3])
     with col5:
         st.text(names[4])
+
         st.image(posters[4])
